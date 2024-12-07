@@ -1,0 +1,56 @@
+/* Styles généraux */
+:root {
+    --primary-color: #127475;
+    --secondary-color: #f5dfbb;
+    --dark-color: #01110A;
+    --text-color: #003E1F;
+    --light-text: rgb(126, 126, 126);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--text-color); 
+    color: var(--light-text);
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Section Accueil */
+#acceuil {
+    text-align: center;
+    padding: 5rem 1rem;
+    border-radius: 10px; 
+    background-color: var(--primary-color); 
+    color: var(--light-text); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#acceuil h1 {
+    font-size: 2.5rem;
+}
